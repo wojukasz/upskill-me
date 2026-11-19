@@ -1,0 +1,24 @@
+{
+  "name": "upskill-me",
+  "version": "0.1.0",
+  "description": "Agent skills that teach you while you do real engineering work: coach-me gives hints, tutor-me gives the answer packaged to teach, explain-change-me explains a mechanism before you change it.",
+  "author": {
+    "name": "Lukasz Wojnicki",
+    "url": "https://github.com/wojukasz"
+  },
+  "repository": "https://github.com/wojukasz/upskill-me",
+  "license": "MIT",
+  "keywords": [
+    "learning",
+    "coaching",
+    "tutor",
+    "sre",
+    "platform-engineering",
+    "skills"
+  ],
+  "skills": [
+    "./skills/coach-me",
+    "./skills/tutor-me",
+    "./skills/explain-change-me"
+  ]
+}

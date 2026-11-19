@@ -1,0 +1,22 @@
+{
+  "name": "upskill-me",
+  "owner": {
+    "name": "Lukasz Wojnicki",
+    "url": "https://github.com/wojukasz"
+  },
+  "description": "Agent skills that teach you while you do real engineering work.",
+  "plugins": [
+    {
+      "name": "upskill-me",
+      "source": "./",
+      "description": "coach-me, tutor-me and explain-change-me: learn while the agent helps, instead of only reading finished answers.",
+      "category": "learning",
+      "keywords": [
+        "learning",
+        "coaching",
+        "tutor",
+        "sre"
+      ]
+    }
+  ]
+}
