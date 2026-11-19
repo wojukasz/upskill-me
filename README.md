@@ -43,6 +43,51 @@ yourself, and both use `explain-change-me` for the full path of a mechanism.
 | Fixing a production autoscaler today and you want to know why the fix works | `/tutor-me` |
 | Changing node consolidation, and you must explain it in the change review | `explain-change-me` |
 
+## Skills that complete the set
+
+upskill-me covers learning while you do one task. These skills from other
+repositories cover the rest, and the three here are written to work beside
+them. They are not bundled: install the ones you want from their own repos.
+
+| Skill | From | What it adds | Use it when |
+|---|---|---|---|
+| `show-me` | [humanlayer/skills](https://github.com/humanlayer/skills) | Pseudocode, call trees, file trees, Mermaid diagrams and focused HTML visuals | Prose is not landing. `coach-me` and `tutor-me` ask for "a diagram" when the flow needs one; this is the skill that draws it |
+| `teach` | [mattpocock/skills](https://github.com/mattpocock/skills) | A lesson track over weeks: a mission, short HTML lessons with quizzes, reference sheets and numbered learning records | You want to learn a topic for its own sake, not just get through today's task |
+| `wait-what` | [mattpocock/skills](https://github.com/mattpocock/skills) | The last answer again, re-pitched in simpler or glossary terms | An explanation from any skill did not land |
+| `grill-me` | [mattpocock/skills](https://github.com/mattpocock/skills) | A relentless interview about a plan, one question at a time, each with a recommended answer | Before `explain-change-me`: settle what you are changing and why, then learn how it works |
+
+How they fit together:
+
+```mermaid
+flowchart LR
+  G[grill-me<br/>what and why] --> E[explain-change-me<br/>how it works]
+  E --> C[coach-me / tutor-me<br/>do the work]
+  C -.->|need a picture| S[show-me]
+  C -.->|lost| W[wait-what]
+  C -.->|want the whole topic| T[teach]
+```
+
+Install them with the [skills CLI](https://www.skills.sh), one skill at a time:
+
+```sh
+npx skills add humanlayer/skills --skill show-me
+npx skills add mattpocock/skills --skill teach
+npx skills add mattpocock/skills --skill wait-what
+npx skills add mattpocock/skills --skill grill-me
+```
+
+Or, in Claude Code, from their plugin marketplaces:
+
+```sh
+claude plugin marketplace add humanlayer/skills
+claude plugin install show-me@skills
+claude plugin marketplace add mattpocock/skills
+claude plugin install mattpocock-skills@mattpocock
+```
+
+Matt Pocock's plugin installs his whole engineering set, not only the three
+above.
+
 ## What each skill does
 
 **`coach-me`** classifies the request into one of nine modes (mechanism,

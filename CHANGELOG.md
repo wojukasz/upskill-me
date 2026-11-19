@@ -3,6 +3,14 @@
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and versions follow [Semantic Versioning](https://semver.org/).
 
+## [Unreleased]
+
+### Added
+
+- README: skills from other repositories that complete the set (`show-me`,
+  `teach`, `wait-what`, `grill-me`), how they fit together, and how to install
+  them.
+
 ## [0.1.0] - 2026-11-19
 
 ### Added
